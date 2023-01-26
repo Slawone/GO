@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/icon.svg">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>Модуль 2 - Урок 1</title>
 </head>
 <body>
@@ -65,6 +65,7 @@
           </li>
         </ul>
       </section>
+      <!-- /section -->
       <section id="halls">
         <h2>Наши залы</h2>
         <ol>
@@ -74,6 +75,7 @@
           <li><a href="neon.html">Neon style</a></li>
         </ol>
       </section>
+      <!-- /section -->
       <section id="booking">
         <h2>Забронировать зал просто</h2>
         <form 
@@ -169,26 +171,21 @@
               Время
               <input type="time" name="time" required placeholder="Время">
             </label>
-            <br>
             <label>
               <input type="number" required placeholder="Сколько человек">
             </label>
-            <br>
             <label>
               Имя
               <input type="text" name="firstname" required>
             </label>
-            <br>
             <label>
               Фамилия
               <input type="text" name="lastname" required>
             </label>
-            <br>
             <label>
               Телефон
               <input type="tel" name="phone" required>
             </label>
-            <br>
             <label>
               Email
               <input type="email" name="email">
@@ -199,17 +196,19 @@
         <button>Забронировать</button>
         </form>
       </section>
+      <!-- /section -->
       <section id="about">
         <h2>О нас</h2>
         <p>Для хороших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
         <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
         <div>
-          <blockquote>
-            <p><b>GAME OVER</b> - это место незабываемых впечатлений</p>
+          <blockquote class="quote">
+            <p class="quote__text"><b>GAME OVER</b> - это место незабываемых впечатлений</p>
             <cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
           </blockquote>
         </div>
       </section>
+      <!-- /section -->
       <section id="reviews">
         <h2>Отзывы посетителей</h2>
         <ul>
@@ -236,14 +235,25 @@
           </li>
         </ul>
       </section>
+      <!-- /section -->
+      <section class="faq">
+        <h2>Частые вопросы</h2>
+        <ul class="faq__list">
+          <li class="faq__list-item">Можно ли забронировать комнату онлайн?</li>
+          <li class="faq__list-item">Могут ли мне вернуть деньги за бронь?</li>
+          <li class="faq__list-item">Какая комнта самая популярная?</li>
+          <li class="faq__list-item">Как получить VIP карту?</li>
+          <li class="faq__list-item">Какая комната самая популярная?</li>
+        </ul>
+      </section>
+      <!-- /section -->
       <section id="contacts">
         <h2>Контакты</h2>
         <p>г. Москва ул. Аквамарина, 16</p>
-        <br>
         <a href="tel:89509302893">8(950)930-28-93</a>
-        <br>
         <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
       </section>
+      <!-- /section -->
     </main>
     <footer>
       <ul>

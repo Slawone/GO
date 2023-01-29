@@ -2,10 +2,14 @@
   height: 823px;
   margin-top: 146px;
   margin-bottom: 100px;
-  background-image: url('../img/banner.png');
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 675px 762px;
+  position: relative;
+}
+
+.first-screen:after {
+  content: url('../img/banner.png');
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .first-screen__title {

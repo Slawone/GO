@@ -1,0 +1,42 @@
+.halls {
+  padding-bottom: 100px;
+}
+
+.halls__title {
+  margin-bottom: 60px;
+}
+
+.halls__item {
+  width: 100%;
+  height: 710px;  
+  text-align: center;
+  line-height: 710px;
+} 
+
+.halls__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.halls__link {
+  display: block;
+  height: 100%;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.halls__link_vibe {
+  background-image: url('../img/vibes.jpg');
+}
+
+.halls__link_wars {
+  background-image: url('../img/star-wars.jpg');
+}
+
+.halls__link_west {
+  background-image: url('../img/wild-west.jpg');
+}
+
+.halls__link_neon {
+  background-image: url('../img/neon-style.jpg');
+}

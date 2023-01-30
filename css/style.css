@@ -22,7 +22,7 @@ a {
   color: inherit;
 }
 
-.wrapper {
+.container {
   width: 1180px;
   margin: 0 auto;
 }
@@ -31,4 +31,12 @@ a {
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1b1a1b;
+  padding: 146px 0 51px;
 }

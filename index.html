@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/icon.svg">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
   <title>Модуль 2 - Урок 8</title>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="container">
     <!-- <header>
       <img src="img/logo.svg" alt="Логотип">
       <h2>Меню</h2>
@@ -76,16 +77,32 @@
         <div class="wrapper">
           <h2 class="halls__title section-title">Наши залы</h2>
           <ul class="halls__list">
-            <li class="halls__item"><a class="halls__link halls__link_vibe" href="vibes.html">80's vibes</a></li>
-            <li class="halls__item"><a class="halls__link halls__link_wars" href="starwars.html">Star wars</a></li>
-            <li class="halls__item"><a class="halls__link halls__link_west" href="wildwest">Wild west</a></li>
-            <li class="halls__item"><a class="halls__link halls__link_neon" href="neon.html">Neon style</a></li>
+            <li class="halls__item">
+              <a class="halls__link halls__link_vibe" href="vibes.html">
+                80's vibes
+              </a>
+            </li>
+            <li class="halls__item">
+              <a class="halls__link halls__link_wars" href="starwars.html">
+                Star wars
+              </a>
+            </li>
+            <li class="halls__item">
+              <a class="halls__link halls__link_west" href="wildwest">
+                Wild west
+              </a>
+            </li>
+            <li class="halls__item">
+              <a class="halls__link halls__link_neon" href="neon.html">
+                Neon style
+              </a>
+            </li>
           </ul>
         </div>
       </section>
       <!-- /.halls -->
-      <section id="booking">
-        <h2 class="section-title">Забронировать</h2>
+      <section id="booking" class="booking">
+        <h2 class="booking__title section-title">Забронировать</h2>
         <form 
         action="https://jsonplaceholder.typicode.com/posts"
         method="POST"

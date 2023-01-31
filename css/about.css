@@ -6,6 +6,20 @@
   margin-bottom: 50px;
 }
 
+.about__img {
+  display: inline-block;
+  width: 600px;
+  height: 596px;
+  background-image: url('..//img/about.jpg');
+  margin-right: 75px;
+}
+
+.about__content {
+  display: inline-block;
+  width: 500px;
+  height: 596px;
+}
+
 .about__text {
   font-size: 20px;
   line-height: 28px;
@@ -43,8 +57,8 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 110px;
-  top: 50%;
+  right: 0;
+  bottom: 24px;
   transform: rotate(180deg);
 }
 

@@ -7,7 +7,7 @@
   <link rel="icon" href="img/icon.svg">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
-  <title>Модуль 2 - Урок 12</title>
+  <title>Модуль 2 - Урок 13</title>
 </head>
 <body>
   <div class="container">
@@ -72,7 +72,7 @@
         <div class="first-screen__subtitle">Новый формат игр и отдыха</div>
       </section>
       <section id="halls" class="halls">
-        <h2 class="halls__title section-title">Наши залы</h2>
+        <h2 class="section-title halls__title">Наши залы</h2>
           <ul class="halls__list">
             <li class="halls__item">
               <a class="halls__link halls__link_vibe" href="vibes.html">
@@ -98,7 +98,7 @@
       </section>
       <!-- /.halls -->
       <section id="booking" class="booking">
-        <h2 class="booking__title section-title">Забронировать</h2>
+        <h2 class="section-title booking__title">Забронировать</h2>
         <form 
         action="https://jsonplaceholder.typicode.com/posts"
         method="POST"
@@ -221,54 +221,58 @@
         </label>
         </form>
       </section>
-      <!-- /section -->
+      <!-- /.booking -->
       <section id="about" class="about">
-        <h2 class="about__title section-title">О нас</h2>
-          <div class="about__img"></div>
-          <div class="about__content">
-            <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
-            <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
-            <div>
-              <blockquote class="quote">
-                <p class="quote__text"><span class="quote__span">GAME OVER -</span> это место незабываемых впечатлений</p>
-                <div class="quote__author">
-                  <img class="quote__img" src="img/rewiev1.png" alt="">
-                  <p class="quote">Аркадий Абакшин, создатель игровой территории GAME OVER</p>
-                </div>
-              </blockquote>
+        <h2 class="section-title about__title">О нас</h2>
+        <div class="about__img"></div>
+        <div class="about__content">
+          <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+          <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+          <blockquote class="quote">
+            <p class="quote__text"><span class="quote__span">GAME OVER -</span> это место незабываемых впечатлений</p>
+            <div class="quote__author">
+              <img class="quote__img" src="img/rewiev1.png" alt="">
+              <p class="quote">Аркадий Абакшин, создатель игровой территории GAME OVER</p>
             </div>
-          </div>
+          </blockquote>
+        </div>
       </section>
       <!-- /.about -->
-      <!-- <section id="reviews">
-        <h2>Отзывы посетителей</h2>
-        <ul>
-          <li>
-            <figure>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2UaHMCbH5JkjRMBfStKqHqha0b56ylVhKg&usqp=CAU" alt="" height="200">
+      <section id="reviews" class="reviews">
+        <h2 class="section-title reviews__title">Отзывы посетителей</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <figure class="reviews__avatar">
+              <img class="reviews__avatar-img" src="img/ava1.png" alt="">
               <figcaption>Макс Самойлов</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laudantium amet vero corporis, aut tenetur cum repellat dolorem dolor obcaecati.</p>
+            <p class="reviews__text">
+              Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
+            </p>
           </li>
-          <li>
-            <figure>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2UaHMCbH5JkjRMBfStKqHqha0b56ylVhKg&usqp=CAU" alt="" height="200">
+          <li class="reviews__item">
+            <figure class="reviews__avatar">
+              <img class="reviews__avatar-img" src="img/ava2.png" alt="">
               <figcaption>Оксана Григорьева</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur libero magnam, vitae voluptate delectus architecto.</p>
+            <p class="reviews__text">
+              Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений
+            </p>
           </li>
-          <li>
-            <figure>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2UaHMCbH5JkjRMBfStKqHqha0b56ylVhKg&usqp=CAU" alt="" height="200">
+          <li class="reviews__item">
+            <figure class="reviews__avatar">
+              <img class="reviews__avatar-img" src="img/ava3.png" alt="">
               <figcaption>Никита Самойлов</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laudantium amet vero corporis, aut tenetur cum repellat dolorem dolor obcaecati.</p>
+            <p class="reviews__text">
+              Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса.
+            </p>
           </li>
         </ul>
-      </section> -->
-      <!-- /section -->
+      </section>
+      <!-- /.reviews -->
       <section class="faq">
-        <h2 class="faq__title section-title">Частые вопросы</h2>
+        <h2 class=" section-title faq__title">Частые вопросы</h2>
           <ul class="faq__list">
             <li class="faq__list-item">Можно ли забронировать комнату онлайн?</li>
             <li class="faq__list-item">Могут ли мне вернуть деньги за бронь?</li>
@@ -279,7 +283,7 @@
       </section>
       <!-- /.faq -->
       <section id="contacts" class="contacts">
-        <h2 class="contacts__title section-title">Контакты</h2>
+        <h2 class="section-title contacts__title">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item contacts__item_location">
             г. Москва <br> ул. Аквамарина, 16

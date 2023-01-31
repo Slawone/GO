@@ -9,13 +9,14 @@
 .about__img {
   display: inline-block;
   width: 600px;
-  height: 596px;
+  min-height: 596px;
   background-image: url('..//img/about.jpg');
   margin-right: 75px;
 }
 
 .about__content {
   display: inline-block;
+  vertical-align: top;
   width: 500px;
   height: 596px;
 }

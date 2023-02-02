@@ -1,0 +1,25 @@
+.header {
+  padding: 8px 0 3px;
+  margin-bottom: 50px; 
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  gap: 40px;
+}
+
+.header__link {
+  font-size: 22px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.header__btn {
+  padding: 12px 32px;
+  border: 3px solid #CD06FF;
+}

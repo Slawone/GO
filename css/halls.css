@@ -6,25 +6,28 @@
   margin-bottom: 60px;
 }
 
+.halls__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .halls__item {
-  display: inline-block;
-  width: 580px;
-  height: 349px;  
-  text-align: center;
-  line-height: 349px;
+  flex-basis: 580px;
+  min-height: 349px;  
 } 
-
-.halls__item:not(:nth-child(2n)) {
-  margin-right: 15px;
-}
-
-.halls__item:not(:nth-child(-2n)) {
-  margin-bottom: 20px;
-}
 
 .halls__link {
   display: block;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.halls__description {
+  max-width: 250px;
   font-size: 70px;
   font-weight: 700;
   text-transform: uppercase;

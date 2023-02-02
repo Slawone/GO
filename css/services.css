@@ -1,0 +1,54 @@
+.services {
+  margin-bottom: 100px;
+}
+
+.services__title {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 20px;
+}
+
+.services__item {
+  flex-basis: 380px;
+  min-height: 228px;
+  padding: 166px 0 0 40px;
+}
+
+.services__item_vr {
+  background-image: url(../img/services/vr.jpg);
+}
+
+.services__item_audio {
+  background-image: url(../img/services/audio.jpg);
+}
+
+.services__item_karaoke {
+  background-image: url(../img/services/karaoke.jpg);
+}
+
+.services__item_games {
+  background-image: url(../img/services/games.jpg);
+}
+
+.services__item_netflix {
+  background-image: url(../img/services/netflix.jpg);
+}
+
+.services__item_ps5 {
+  background-image: url(../img/services/ps5.jpg);
+}
+
+.services__description {
+  max-width: 300px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}

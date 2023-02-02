@@ -7,7 +7,7 @@
   <link rel="icon" href="img/icon.svg">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
-  <title>Модуль 2 - Урок 13</title>
+  <title>Модуль 3 - Урок 1</title>
 </head>
 <body>
   <header class="header">
@@ -27,9 +27,8 @@
   </header>
   <main>
     <section class="hero">
-      <div class="container">
-        <div class="hero__wrapper">
-          <h1 class="hero__title">Game over</h1>
+      <div class="container hero__container">
+        <h1 class="hero__title">Game over</h1>
           <div class="hero__subtitle">Новый формат игр и отдыха</div>
           <ul class="info hero__info">
             <li class="info__item">
@@ -42,54 +41,39 @@
             </li>
           </ul>
           <button class="btn hero__btn">Забронировать</button>
-          <a href="" class="link-down">
+          <a href="#services" class="link-down">
             <img src="img/arrow_down.svg" alt="down" class="link-down__img">
           </a>
-        </div>
       </div>
     </section>
-    <!-- <section>
-      <h2>У нас есть все для классного отдыха с друзьями!</h2>
-      <ul>
-        <li>
-         <figure>
-          <img src="img/vr.jpg" alt="Человек в VR очках" height="228">
-          <figcaption>VR очки</figcaption>
-         </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/audio.jpg" alt="Аудио-система" height="228">
-            <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
-           </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/micro.jpg" alt="Девушка с микрофоном" height="228">
-            <figcaption>Караоке (4 микрофона)</figcaption>
-           </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/game.jpg" alt="Люди играют в настольную игру" height="228">
-            <figcaption>Настольные игры</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/netflix.jpg" alt="Люди играют в настольную игру" height="228">
-            <figcaption>Кино сервисы Netflix, MegoGo, КиноПоиск, Okko</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/sony.jpg" alt="Люди играют в настольную игру" height="228">
-            <figcaption>Playstation 5</figcaption>
-          </figure>
-        </li>
-      </ul>
-    </section> -->
-    <!-- /section -->
+    <!-- /.hero -->
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title services__title">У нас есть все для классного отдыха с друзьями!</h2>
+        <ul class="services__list">
+          <li class="services__item services__item_vr">
+            <p class="services__description">VR очки</p>
+          </li>
+          <li class="services__item services__item_audio">
+            <p class="services__description">Аудио-система 5.1 с отличным звуком</p>
+          </li>
+          <li class="services__item services__item_karaoke">
+            <p class="services__description">Караоке (4 микрофона)</p>
+          </li>
+          <li class="services__item services__item_games">
+            <p class="services__description">Настольные игры</p>
+          </li>
+          <li class="services__item services__item_netflix">
+            <p class="services__description">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+          </li>
+          <li class="services__item services__item_ps5">
+            <p class="services__description">Playstation 5</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /.services -->
     
     <section id="halls" class="halls">
       <h2 class="section-title halls__title">Наши залы</h2>

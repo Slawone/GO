@@ -108,125 +108,146 @@
       <div class="container">
         <h2 class="section-title booking__title">Забронировать</h2>
       <form 
+      class="form"
       action="https://jsonplaceholder.typicode.com/posts"
       method="POST"
       >  
-      <fieldset>
-        <label>
-          <input type="radio" name="halls" value="80's vibes">
-          80's vibes
-        </label>
-        <label>
-          <input type="radio" name="halls" value="star wars">
-          star wars
-        </label>
-        <label>
-          <input type="radio" name="halls" value="wild west">
-          wild west
-        </label>
-        <label>
-          <input type="radio" name="halls" value="neon style">
-          neon style
-        </label>
+      <fieldset class="form__radio-field">
+        <legend class="form__title">Выбери зал</legend>
+        <div class="form__radio-box">
+          <div class="form__radio-btn">
+            <input class="form__radio-input" id="radio-1" type="radio" name="halls" value="80's vibes">
+            <label class="form__radio-label" for="radio-1">80's vibes</label>
+          </div>
+          <div class="form__radio-btn">
+            <input class="form__radio-input" id="radio-2" type="radio" name="halls" value="star wars">
+            <label class="form__radio-label" for="radio-2">star wars</label>
+          </div>
+          <div class="form__radio-btn">
+            <input class="form__radio-input" id="radio-3" type="radio" name="halls" value="wild west">
+            <label class="form__radio-label" for="radio-3">wild west</label>
+          </div>
+          <div class="form__radio-btn">
+            <input class="form__radio-input" id="radio-4" type="radio" name="halls" value="neon style">
+            <label class="form__radio-label" for="radio-4">neon style</label>
+          </div>
+        </div>
       </fieldset>
+      <!-- /.form__radio-field -->
+
+      <fieldset class="form__checkbox-field">
+        <legend class="form__title">Собери набор развлечений</legend>
   
-      <fieldset>
-        <legend>Собери набор развлечений</legend>
+        <div class="form__check-box">
+          <fieldset>
+            <legend class="form__title form__title_margin">Приставка:</legend>
+            <div class="form__check-box-item">
+              <label form__checkbox-label>
+                <input type="radio" name="console" value="playstation">
+                Playstation
+              </label>
+              <label form__checkbox-label>
+                <input type="radio" name="console" value="Sega Mega Drive">
+                Sega Mega Drive
+              </label>
+              <label form__checkbox-label>
+                <input type="radio" name="console" value="X-box One S">
+                X-box One S
+              </label>
+              <label form__checkbox-label>
+                <input type="radio" name="console" value="Dendy">
+                Dendy
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="form__title form__title_margin">Настольные игры:</legend>
+            <div class="form__check-box-item">
+              <label>
+                <input type="checkbox" name="games" value="Jenga">
+                Jenga
+              </label>
+              <label>
+                <input type="checkbox" name="games" value="Monopoly">
+                Monopoly
+              </label>
+              <label>
+                <input type="checkbox" name="games" value="Manchkin">
+                Манчкин
+              </label>
+              <label>
+                <input type="checkbox" name="games" value="Alias">
+                Alias
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="form__title form__title_margin">Дополнительно:</legend>
+            <div class="form__check-box-item">
+              <label>
+                <input type="checkbox" name="extraServices" value="karaoke">
+                Караоке
+              </label>
+              <label>
+                <input type="checkbox" name="extraServices" value="VR">
+                VR
+              </label>
+            </div>
+          </fieldset>
+        </div>
   
-        <fieldset>
-          <legend>Приставка:</legend>
-  
-          <label>
-            <input type="radio" name="console" value="playstation">
-            Playstation
-          </label>
-          <label>
-            <input type="radio" name="console" value="Sega Mega Drive">
-            Sega Mega Drive
-          </label>
-          <label>
-            <input type="radio" name="console" value="X-box One S">
-            X-box One S
-          </label>
-          <label>
-            <input type="radio" name="console" value="Dendy">
-            Dendy
-          </label>
-        </fieldset>
-  
-        <fieldset>
-          <legend>Настольные игры:</legend>
-  
-          <label>
-            <input type="checkbox" name="games" value="Jenga">
-            Jenga
-          </label>
-          <label>
-            <input type="checkbox" name="games" value="Monopoly">
-            Monopoly
-          </label>
-          <label>
-            <input type="checkbox" name="games" value="Manchkin">
-            Манчкин
-          </label>
-          <label>
-            <input type="checkbox" name="games" value="Alias">
-            Alias
-          </label>
-        </fieldset>
-  
-        <fieldset>
-          <legend>Дополнительно:</legend>
-  
-          <label>
-            <input type="checkbox" name="extraServices" value="karaoke">
-            Караоке
-          </label>
-          <label>
-            <input type="checkbox" name="extraServices" value="VR">
-            VR
-          </label>
-        </fieldset>
-  
-        <fieldset>
-          <legend>Выбери дату и время</legend>
-  
-          <label>
-            Дата
-            <input type="date" name="date" required>
-          </label>
-          <label>
-            Время
-            <input type="time" name="time" required>
-          </label>
-          <label>
-            Количество человек
-            <input type="number" required>
-          </label>
-          <label>
-            Имя
-            <input type="text" name="firstname" required>
-          </label>
-          <label>
-            Фамилия
-            <input type="text" name="lastname" required>
-          </label>
-          <label>
-            Номер телефона
-            <input type="tel" name="phone" required>
-          </label>
-          <label>
-            <input type="checkbox" name="age" value="18 years old" required>
-            Я старше 18 лет
-          </label>
-        </fieldset>
       </fieldset>
+      <!-- /.form__checkbox-field -->
+      <fieldset class="form__date-field">
+        <legend class="form__title">Выбери дату и время</legend>
+
+        <div class="form__columns">
+          <ul class="form__column-list">
+            <li class="form__column-item">
+              <div class="form__column-row-item">
+                <label class="form__column-row-label form__column-row-label_date">
+                  <input class="form__column-row-input" type="date" name="" id="">
+                </label>
+                <label class="form__column-row-label form__column-row-label_time">
+                  <input class="form__column-row-input" type="time" name="" id="">
+                </label>
+              </div>
+            </li>
+            <li class="form__column-item">
+              <label class="form__column-label form__column-label_number">
+                <input class="form__column-input form__column-input_number" type="number" name="number" id="number">
+              </label>
+            </li>            
+          </ul>
+          <ul class="form__column-list form__column-list_gap">
+            <li class="form__column-item">
+              <label class="form__column-label" for="firstname">
+                Имя
+                <input class="form__column-input" type="text" id="firstname" name="firstname" required>
+              </label>              
+            </li>
+            <li class="form__column-item">
+              <label class="form__column-label" for="lastname">
+                Фамилия
+                <input class="form__column-input" type="text" id="lastname" name="lastname" required>
+              </label>
+              
+            </li>
+          </ul>
+          <ul class="form__column-list form__column-list_gap">
+            <li class="form__column-item">
+              <label class="form__column-label" for="phone">Телефон</label>
+              <input class="form__column-input" type="tel" id="phone" name="phone" required>
+            </li>
+            <li class="form__column-item">
+              <label class="form__column-label" for="email">E-mail</label>
+              <input class="form__column-input" type="email" id="email" name="email">
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <button class="btn form__btn">Забронировать</button>
   
-      <button>Забронировать</button>
-      <label>
-        <input type="checkbox" name="assent" value="I agree" required>
-        Согласен на обработку данных
-      </label>
       </form>
       </div>
     </section>
@@ -234,17 +255,19 @@
     <section id="about" class="about">
       <div class="container">
         <h2 class="section-title about__title">О нас</h2>
-        <div class="about__img"></div>
-        <div class="about__content">
-          <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
-          <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
-          <blockquote class="quote">
-            <p class="quote__text"><span class="quote__span">GAME OVER -</span> это место незабываемых впечатлений</p>
-            <div class="quote__author">
-              <img class="quote__img" src="img/rewiev1.png" alt="">
-              <p class="quote">Аркадий Абакшин, создатель игровой территории GAME OVER</p>
-            </div>
-          </blockquote>
+        <div class="about__wrapper">
+          <div class="about__img"></div>
+          <div class="about__content">
+            <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+            <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+            <blockquote class="quote">
+              <p class="quote__text"><span class="quote__span">GAME OVER -</span> это место незабываемых впечатлений</p>
+              <div class="quote__author">
+                <img class="quote__img" src="img/rewiev1.png" alt="">
+                <p class="quote">Аркадий Абакшин, создатель игровой территории GAME OVER</p>
+              </div>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>

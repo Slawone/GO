@@ -6,17 +6,18 @@
   margin-bottom: 50px;
 }
 
+.about__wrapper {
+  display: flex;
+  gap: 80px;
+}
+
 .about__img {
-  display: inline-block;
   width: 600px;
   min-height: 596px;
   background-image: url('..//img/about.jpg');
-  margin-right: 75px;
 }
 
 .about__content {
-  display: inline-block;
-  vertical-align: top;
   width: 500px;
   height: 596px;
 }
@@ -29,6 +30,11 @@
 
 .about__text:last-of-type {
   margin-bottom: 70px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
 }
 
 .quote__text {
@@ -69,16 +75,13 @@
 
 .quote__author {
   width: 390px;
-  margin-left: auto;
+  align-self: flex-end;
+  display: flex;
+  gap: 30px;
 }
 
 .quote__author p {
   width: 360px;
   font-size: 20px;
   line-height: 28px;
-}
-
-.quote__img {
-  float: left;
-  margin-right: 30px;
 }

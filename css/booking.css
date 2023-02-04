@@ -7,3 +7,188 @@
 .booking__title {
   margin-bottom: 50px;
 }
+
+.form__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form__title_margin {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form__radio-field {
+  margin-bottom: 60px;
+}
+
+.form__radio-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__radio-label {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  padding: 10px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.form__radio-label:hover {
+  background-color: #5a4161;
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-input:checked + .form__radio-label {
+  background: #2a0335;
+  color: #fff;
+}
+
+.form__check-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+
+.form__check-box-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__checkbox-label {
+  font-size: 22px;
+  line-height: 25px;
+}
+
+/* input[type=date]::-webkit-calendar-picker-indicator {
+  background-image: url('../img/arrow.svg');
+} */
+
+.form__date-field {
+  margin-bottom: 40px;
+}
+
+.form__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__column-list {
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* ----------------------------------------------------------------------- */
+.form__column-list {
+  flex-basis: 300px;
+  gap: 36px;
+}
+
+.form__column-list_gap {
+  gap: 16px;
+}
+.form__column-item {
+  width: 100%;
+}
+.form__column-row-item {
+  display: flex;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.form__column-row-input {
+  opacity: 0;
+  width: 134px;
+  height: 52px;
+  border: none;
+  outline: none;
+}
+.form__column-row-label {
+  display: block;
+  background-color: #fff;
+  color: #211E1E;
+  font-size: 18px;
+  position: relative;
+  background-image: url('../img/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+}
+
+.form__column-row-label_date:before {
+  content: "Дата";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.form__column-row-label_time:before {
+  content: "Время";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.form__column-input_number {
+  opacity: 0;
+  width: 300px;
+  height: 52px;
+  border: none;
+  outline: none;
+}
+
+.form__column-label_number {
+  display: block;
+  background-color: #fff;
+  color: #211E1E;
+  font-size: 18px;
+  position: relative;
+  background-image: url('../img/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+}
+
+.form__column-label_number:before {
+  content: "Сколько человек";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.form__column-label {
+  display: block;
+}
+.form__column-input {
+  width: 300px;
+  height: 52px;
+}
+/* ----------------------------------------------------------------------- */
+
+
+.form__btn {
+  display: block;
+  color: #6C0287;
+  background-color: #fff;
+  padding: 16px 50px;
+  margin-left: auto;
+}

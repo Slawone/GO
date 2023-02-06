@@ -10,33 +10,21 @@
 }
 
 .faq__list-item {
-  position: relative;
-  background-color: #fff;
-  color: #1C1A1A;
-  font-weight: 700;
-  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 30px 70px;
-  background-image: url('../img/icons/open-purple.svg');
-  background-repeat: no-repeat;
-  background-position: center right 50px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1C1A1A;
+  background-color: #fff;
 }
 
 .faq__list-item:nth-child(even) {
   color: #fff;
   background-color: #440F51;
-  background-image: url('../img/icons/open.svg');
 }
 
-/* .faq__list-item:after {
-  content: "";
-  position: absolute;
-  right: 50px;
-  width: 30px;
-  height: 30px;
-  background-image: url('../img/icons/open-purple.svg');
-  background-size: contain;
+.faq__list-img {
+  cursor: pointer;                               
 }
-
-.faq__list-item:nth-child(even):after {
-  background-image: url('../img/icons/open.svg');
-} */

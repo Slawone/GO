@@ -75,10 +75,6 @@ fieldset {
   line-height: 25px;
 }
 
-/* input[type=date]::-webkit-calendar-picker-indicator {
-  background-image: url('../img/arrow.svg');
-} */
-
 .form__date-field {
   margin-bottom: 40px;
 }
@@ -117,18 +113,15 @@ fieldset {
   height: 52px;
   padding: 10px;
   color: #000;
-  background-image: url('../img/arrow.svg');
-  background-repeat: no-repeat;
-  background-position: center right 10px;
 }
 
-.form__column-row-input:focus {
+/* .form__column-row-input:focus {
   background-image: none;  
 }
 
 .form__column-row-input::placeholder {
   color: #000;
-}
+} */
 
 .form__column-input_number::placeholder {
   color: #000;
@@ -148,9 +141,6 @@ fieldset {
 .form__column-input_number::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-
-
-
 
 .form__column-input {
   width: 300px;

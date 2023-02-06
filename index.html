@@ -112,142 +112,141 @@
       action="https://jsonplaceholder.typicode.com/posts"
       method="POST"
       >  
-      <fieldset class="form__radio-field">
-        <legend class="form__title">Выбери зал</legend>
-        <div class="form__radio-box">
-          <div class="form__radio-btn">
-            <input class="form__radio-input" id="radio-1" type="radio" name="halls" value="80's vibes">
-            <label class="form__radio-label" for="radio-1">80's vibes</label>
+        <fieldset class="form__radio-field">
+          <legend class="form__title">Выбери зал</legend>
+          <div class="form__radio-box">
+            <div class="form__radio-btn">
+              <input class="form__radio-input" id="radio-1" type="radio" name="halls" value="80's vibes">
+              <label class="form__radio-label" for="radio-1">80's vibes</label>
+            </div>
+            <div class="form__radio-btn">
+              <input class="form__radio-input" id="radio-2" type="radio" name="halls" value="star wars">
+              <label class="form__radio-label" for="radio-2">star wars</label>
+            </div>
+            <div class="form__radio-btn">
+              <input class="form__radio-input" id="radio-3" type="radio" name="halls" value="wild west">
+              <label class="form__radio-label" for="radio-3">wild west</label>
+            </div>
+            <div class="form__radio-btn">
+              <input class="form__radio-input" id="radio-4" type="radio" name="halls" value="neon style">
+              <label class="form__radio-label" for="radio-4">neon style</label>
+            </div>
           </div>
-          <div class="form__radio-btn">
-            <input class="form__radio-input" id="radio-2" type="radio" name="halls" value="star wars">
-            <label class="form__radio-label" for="radio-2">star wars</label>
-          </div>
-          <div class="form__radio-btn">
-            <input class="form__radio-input" id="radio-3" type="radio" name="halls" value="wild west">
-            <label class="form__radio-label" for="radio-3">wild west</label>
-          </div>
-          <div class="form__radio-btn">
-            <input class="form__radio-input" id="radio-4" type="radio" name="halls" value="neon style">
-            <label class="form__radio-label" for="radio-4">neon style</label>
-          </div>
-        </div>
-      </fieldset>
-      <!-- /.form__radio-field -->
+        </fieldset>
+        <!-- /.form__radio-field -->
 
-      <fieldset class="form__checkbox-field">
-        <legend class="form__title">Собери набор развлечений</legend>
-  
-        <div class="form__check-box">
-          <fieldset>
-            <legend class="form__title form__title_margin">Приставка:</legend>
-            <div class="form__check-box-item">
-              <label form__checkbox-label>
-                <input type="radio" name="console" value="playstation">
-                Playstation
-              </label>
-              <label form__checkbox-label>
-                <input type="radio" name="console" value="Sega Mega Drive">
-                Sega Mega Drive
-              </label>
-              <label form__checkbox-label>
-                <input type="radio" name="console" value="X-box One S">
-                X-box One S
-              </label>
-              <label form__checkbox-label>
-                <input type="radio" name="console" value="Dendy">
-                Dendy
-              </label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend class="form__title form__title_margin">Настольные игры:</legend>
-            <div class="form__check-box-item">
-              <label>
-                <input type="checkbox" name="games" value="Jenga">
-                Jenga
-              </label>
-              <label>
-                <input type="checkbox" name="games" value="Monopoly">
-                Monopoly
-              </label>
-              <label>
-                <input type="checkbox" name="games" value="Manchkin">
-                Манчкин
-              </label>
-              <label>
-                <input type="checkbox" name="games" value="Alias">
-                Alias
-              </label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend class="form__title form__title_margin">Дополнительно:</legend>
-            <div class="form__check-box-item">
-              <label>
-                <input type="checkbox" name="extraServices" value="karaoke">
-                Караоке
-              </label>
-              <label>
-                <input type="checkbox" name="extraServices" value="VR">
-                VR
-              </label>
-            </div>
-          </fieldset>
-        </div>
-  
-      </fieldset>
-      <!-- /.form__checkbox-field -->
-      <fieldset class="form__date-field">
-        <legend class="form__title">Выбери дату и время</legend>
-
-        <div class="form__columns">
-          <ul class="form__column-list">
-            <li class="form__column-item">
-              <div class="form__column-row-item">
-                <label class="form__column-row-label form__column-row-label_date">
-                  <input class="form__column-row-input" type="text" name="date" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Дата">
+        <fieldset class="form__checkbox-field">
+          <legend class="form__title">Собери набор развлечений</legend>
+    
+          <div class="form__check-box">
+            <fieldset>
+              <legend class="form__title form__title_margin">Приставка:</legend>
+              <div class="form__check-box-item">
+                <label form__checkbox-label>
+                  <input type="radio" name="console" value="playstation">
+                  Playstation
                 </label>
-                <label class="form__column-row-label form__column-row-label_time">
-                  <input class="form__column-row-input" type="text" name="time" placeholder="Время" onfocus="(this.type='time')" onblur="(this.type='text')">
+                <label form__checkbox-label>
+                  <input type="radio" name="console" value="Sega Mega Drive">
+                  Sega Mega Drive
+                </label>
+                <label form__checkbox-label>
+                  <input type="radio" name="console" value="X-box One S">
+                  X-box One S
+                </label>
+                <label form__checkbox-label>
+                  <input type="radio" name="console" value="Dendy">
+                  Dendy
                 </label>
               </div>
-            </li>
-            <li class="form__column-item">
-              <label class="form__column-label form__column-label_number">
-                <input class="form__column-input form__column-input_number" type="number" name="number" id="number" placeholder="Сколько человек">
-              </label>
-            </li>            
-          </ul>
-          <ul class="form__column-list form__column-list_gap">
-            <li class="form__column-item">
-              <label class="form__column-label" for="firstname">
-                Имя
-                <input class="form__column-input" type="text" id="firstname" name="firstname" required>
-              </label>              
-            </li>
-            <li class="form__column-item">
-              <label class="form__column-label" for="lastname">
-                Фамилия
-                <input class="form__column-input" type="text" id="lastname" name="lastname" required>
-              </label>
-              
-            </li>
-          </ul>
-          <ul class="form__column-list form__column-list_gap">
-            <li class="form__column-item">
-              <label class="form__column-label" for="phone">Телефон</label>
-              <input class="form__column-input" type="tel" id="phone" name="phone" required>
-            </li>
-            <li class="form__column-item">
-              <label class="form__column-label" for="email">E-mail</label>
-              <input class="form__column-input" type="email" id="email" name="email">
-            </li>
-          </ul>
-        </div>
-      </fieldset>
-      <button class="btn form__btn">Забронировать</button>
-  
+            </fieldset>
+            <fieldset>
+              <legend class="form__title form__title_margin">Настольные игры:</legend>
+              <div class="form__check-box-item">
+                <label>
+                  <input type="checkbox" name="games" value="Jenga">
+                  Jenga
+                </label>
+                <label>
+                  <input type="checkbox" name="games" value="Monopoly">
+                  Monopoly
+                </label>
+                <label>
+                  <input type="checkbox" name="games" value="Manchkin">
+                  Манчкин
+                </label>
+                <label>
+                  <input type="checkbox" name="games" value="Alias">
+                  Alias
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend class="form__title form__title_margin">Дополнительно:</legend>
+              <div class="form__check-box-item">
+                <label>
+                  <input type="checkbox" name="extraServices" value="karaoke">
+                  Караоке
+                </label>
+                <label>
+                  <input type="checkbox" name="extraServices" value="VR">
+                  VR
+                </label>
+              </div>
+            </fieldset>
+          </div>
+    
+        </fieldset>
+        <!-- /.form__checkbox-field -->
+        <fieldset class="form__date-field">
+          <legend class="form__title">Выбери дату и время</legend>
+
+          <div class="form__columns">
+            <ul class="form__column-list">
+              <li class="form__column-item">
+                <div class="form__column-row-item">
+                  <label class="form__column-row-label form__column-row-label_date">
+                    <input class="form__column-row-input" type="date" name="date">
+                  </label>
+                  <label class="form__column-row-label form__column-row-label_time">
+                    <input class="form__column-row-input" type="time" name="time">
+                  </label>
+                </div>
+              </li>
+              <li class="form__column-item">
+                <label class="form__column-label form__column-label_number">
+                  <input class="form__column-input form__column-input_number" type="number" name="number" id="number" placeholder="Сколько человек">
+                </label>
+              </li>            
+            </ul>
+            <ul class="form__column-list form__column-list_gap">
+              <li class="form__column-item">
+                <label class="form__column-label" for="firstname">
+                  Имя
+                  <input class="form__column-input" type="text" id="firstname" name="firstname" required>
+                </label>              
+              </li>
+              <li class="form__column-item">
+                <label class="form__column-label" for="lastname">
+                  Фамилия
+                  <input class="form__column-input" type="text" id="lastname" name="lastname" required>
+                </label>
+                
+              </li>
+            </ul>
+            <ul class="form__column-list form__column-list_gap">
+              <li class="form__column-item">
+                <label class="form__column-label" for="phone">Телефон</label>
+                <input class="form__column-input" type="tel" id="phone" name="phone" required>
+              </li>
+              <li class="form__column-item">
+                <label class="form__column-label" for="email">E-mail</label>
+                <input class="form__column-input" type="email" id="email" name="email">
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <button class="btn form__btn">Забронировать</button>    
       </form>
       </div>
     </section>
@@ -311,11 +310,26 @@
       <div class="container">
         <h2 class=" section-title faq__title">Частые вопросы</h2>
           <ul class="faq__list">
-            <li class="faq__list-item">Можно ли забронировать комнату онлайн?</li>
-            <li class="faq__list-item">Могут ли мне вернуть деньги за бронь?</li>
-            <li class="faq__list-item">Какая комнта самая популярная?</li>
-            <li class="faq__list-item">Как получить VIP карту?</li>
-            <li class="faq__list-item">Какая комната самая популярная?</li>
+            <li class="faq__list-item">
+              <div class="faq__list-text">Можно ли забронировать комнату онлайн?</div>
+              <img src="img/icons/open-purple.svg" alt="Открыть описание" class="faq__list-img">
+            </li>
+            <li class="faq__list-item">
+              <div class="faq__list-text">Могут ли мне вернуть деньги за бронь?</div>
+              <img src="img/icons/open.svg" alt="Открыть описание" class="faq__list-img">
+            </li>
+            <li class="faq__list-item">
+              <div class="faq__list-text">Какая комнта самая популярная?</div>
+              <img src="img/icons/open-purple.svg" alt="Открыть описание" class="                             ">
+            </li>
+            <li class="faq__list-item">
+              <div class="faq__list-text">Как получить VIP карту?</div>
+              <img src="img/icons/open.svg" alt="Открыть описание" class="faq__list-img">
+            </li>
+            <li class="faq__list-item">
+              <div class="faq__list-text">Какая комната самая популярная?</div>
+              <img src="img/icons/open-purple.svg" alt="Открыть описание" class="faq__list-img">
+            </li>
           </ul>
       </div>
     </section>

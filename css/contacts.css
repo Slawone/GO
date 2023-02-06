@@ -48,6 +48,24 @@
   gap: 26px;
 }
 
+.social-media__link {
+  transition: all .3s ease;
+}
+
+.social-media__link:hover {
+  color: #EADEED;
+}
+
+.social-media__link:focus {
+  color: #EADEED;
+  outline: 1px solid #CD06FF;
+}
+
+.social-media__link:active {
+  color:  #CD06FF;
+  outline: none;
+}
+
 .contacts__content {
   display: flex;
   justify-content: space-between;

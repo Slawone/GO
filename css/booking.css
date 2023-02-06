@@ -40,13 +40,27 @@ fieldset {
   color: #000;
   background-color: #fff;
   padding: 10px 40px;
+  border: 3px solid transparent; 
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color .3s ease-in;  
+  transition: all .3s ease-in;  
 }
 
 .form__radio-label:hover {
-  background-color: #5a4161;
+  background-color: #EADEED;
+  border-color: #640AA3; 
+}
+
+.form__radio-label:focus {
+  color: #000;
+  background-color: #fff;
+  border: 3px solid #640AA3; 
+}
+
+.form__radio-label:active {
+  color: #fff;
+  background-color: #6C0287;
+  border-color: #fff; 
 }
 
 .form__radio-input {
@@ -69,6 +83,10 @@ fieldset {
   flex-direction: column;
   gap: 20px;
 }
+
+.form__checkbox-input:focus {
+  outline: 1px solid #CD06FF;
+} 
 
 .form__checkbox-label {
   font-size: 22px;
@@ -114,14 +132,9 @@ fieldset {
   padding: 10px;
   color: #000;
 }
-
-/* .form__column-row-input:focus {
-  background-image: none;  
+.form__column-row-input:focus {
+  outline: 2px solid #CD06FF;
 }
-
-.form__column-row-input::placeholder {
-  color: #000;
-} */
 
 .form__column-input_number::placeholder {
   color: #000;
@@ -146,6 +159,11 @@ fieldset {
   width: 300px;
   height: 52px;
   padding: 0 20px;
+  outline: none;
+  border: 2px solid transparent;
+}
+.form__column-input:focus {
+  border-color: #CD06FF;
 }
 /* ----------------------------------------------------------------------- */
 
@@ -156,4 +174,22 @@ fieldset {
   background-color: #fff;
   padding: 16px 50px;
   margin-left: auto;
+  border: 3px solid transparent;
+  outline: none;
+  transition: all .3s ease ;
+}
+
+.form__btn:hover {
+  background-color: #EADEED;
+  border-color: #6C0287;
+}
+
+.form__btn:focus {
+  background-color: #fff;
+  border-color: #6C0287;
+}
+
+.form__btn:active {
+  background-color: #EADEED;
+  border-color: transparent;
 }

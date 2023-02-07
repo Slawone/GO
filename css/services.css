@@ -16,6 +16,11 @@
   flex-basis: 380px;
   min-height: 228px;
   padding: 166px 0 0 40px;
+  transition: transform .2s ease;
+}
+
+.services__item:hover {
+  transform: scale(1.1);
 }
 
 .services__item_vr {

@@ -60,7 +60,7 @@
   background-color: #6C0287;
   filter: drop-shadow(0 4px 4px #6C0287);
   outline: none;
-  transition: background-color .3s ease-in;
+  transition: background-color .2s ease-in;
 }
 
 .hero__btn:hover {
@@ -85,7 +85,7 @@
   z-index: 10;
   border: 1px solid #fff;
   border-radius: 50%;
-  transition: all .3s ease;
+  transition: all .2s ease;
 }
 
 .link-down:hover {

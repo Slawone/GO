@@ -11,7 +11,12 @@
 .halls__item {
   flex-basis: 580px;
   min-height: 349px;  
-} 
+  transition: transform .2s ease-out;
+}
+
+.halls__item:hover {
+  transform: scale(1.1);
+}
 
 .halls__link {
   display: block;

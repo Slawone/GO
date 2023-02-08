@@ -21,38 +21,37 @@
 }
 
 .header__link:hover {
-  color: #CD06FF;
+  color: var(--light-purple-color);
 }
 
 .header__link:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--light-purple-color);
   outline-offset: 5px;
   border-radius: 5px;
 }
 
 .header__link:active {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .header__btn {
   padding: 12px 32px;
-  /* border: 3px solid #CD06FF; */
-  outline: 3px solid #CD06FF;
+  outline: 3px solid var(--light-purple-color);
   transition: all .2s ease-in;
 }
 
 .header__btn:hover {
-  background-color: #6C0287;
-  outline-color: #6C0287;
+  background-color: var(--dark-purple-color);
+  outline-color: var(--dark-purple-color);
 }
 
 .header__btn:focus {
-  background-color: #6C0287;
-  outline-color: #6C0287;
+  background-color: var(--dark-purple-color);
+  outline-color: var(--dark-purple-color);
 }
 
 .header__btn:active {
-  background-color: #640AA3;
+  background-color: var(--dark-purple-color);
   outline-width: 1px;
-  outline-color: #000;
+  outline-color: var(--black-color);
 }

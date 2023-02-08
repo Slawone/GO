@@ -53,16 +53,16 @@
 }
 
 .social-media__link:hover {
-  color: #EADEED;
+  color: var(--light-white-color);
 }
 
 .social-media__link:focus {
-  color: #EADEED;
-  outline: 1px solid #CD06FF;
+  color: var(--light-white-color);
+  outline: 1px solid var(--light-purple-color);
 }
 
 .social-media__link:active {
-  color:  #CD06FF;
+  color:  var(--light-purple-color);
   outline: none;
 }
 

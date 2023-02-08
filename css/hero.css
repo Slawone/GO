@@ -38,7 +38,7 @@
 }
 
 .info__title {
-  color: #CD06FF;
+  color: var(--light-purple-color);
   font-size: 75px;
   line-height: 106px;
   font-weight: 900;
@@ -57,8 +57,8 @@
 
 .hero__btn {
   padding: 25px 69px;
-  background-color: #6C0287;
-  filter: drop-shadow(0 4px 4px #6C0287);
+  background-color: var(--dark-purple-color);
+  filter: drop-shadow(0 4px 4px var(--dark-purple-color));
   outline: none;
   transition: background-color .2s ease-in;
 }
@@ -68,7 +68,7 @@
 }
 
 .hero__btn:focus {
-  background-color:  #6C0287;
+  background-color:  var(--dark-purple-color);
 }
 
 .hero__btn:active {
@@ -83,31 +83,31 @@
   padding: 20px 25px;
   transform: translateX(-50%);
   z-index: 10;
-  border: 1px solid #fff;
+  border: 1px solid var(--white-color);
   border-radius: 50%;
   transition: all .2s ease;
 }
 
 .link-down:hover {
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .link-down:hover .link-down__img {
-  color: #640AA3;
+  color: var(--dark-purple-color);
 }
 
 .link-down:focus {
   background-color: transparent;
-  outline: 2px solid #640AA3;
+  outline: 2px solid var(--dark-purple-color);
   outline-offset: 2px;
 }
 
 .link-down:active {
-  background-color: #640AA3;
-  border-color: #640AA3;
+  background-color: var(--dark-purple-color);
+  border-color: var(--dark-purple-color);
   outline: none;
 }
 
 .link-down:active .link-down__img {
-  color: #fff;
+  color: var(--white-color);
 }

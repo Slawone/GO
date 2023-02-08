@@ -15,8 +15,8 @@ body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
   font-size: 16px;
-  color: #fff;
-  background-color: #1b1a1b;
+  color: var(--white-color);
+  background-color: var(--bg-color);
   padding: 30px 0 0;
 }
 

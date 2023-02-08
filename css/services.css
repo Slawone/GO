@@ -1,3 +1,7 @@
+.services {
+  padding-bottom: 119px;
+}
+
 .services__title {
   max-width: 700px;
   margin: 0 auto;
@@ -29,6 +33,7 @@
 
 .services__item_audio {
   background-image: url(../img/services/audio.jpg);
+  transform: translateY(69px);
 }
 
 .services__item_karaoke {
@@ -41,6 +46,7 @@
 
 .services__item_netflix {
   background-image: url(../img/services/netflix.jpg);
+  transform: translateY(69px);
 }
 
 .services__item_ps5 {

@@ -37,8 +37,8 @@ fieldset {
   line-height: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000;
-  background-color: #fff;
+  color: var(--black-color);
+  background-color: var(--white-color);
   padding: 10px 40px;
   border: 3px solid transparent; 
   border-radius: 10px;
@@ -47,20 +47,20 @@ fieldset {
 }
 
 .form__radio-label:hover {
-  background-color: #EADEED;
+  background-color: var(--light-white-color);
   border-color: #640AA3; 
 }
 
 .form__radio-label:focus {
   color: #000;
-  background-color: #fff;
+  background-color: var(--white-color);
   border: 3px solid #640AA3; 
 }
 
 .form__radio-label:active {
   color: #fff;
-  background-color: #6C0287;
-  border-color: #fff; 
+  background-color: var(--dark-purple-color);
+  border-color: var(--white-color); 
 }
 
 .form__radio-input {
@@ -69,7 +69,7 @@ fieldset {
 
 .form__radio-input:checked + .form__radio-label {
   background: #2a0335;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .form__check-box {
@@ -85,7 +85,7 @@ fieldset {
 }
 
 .form__checkbox-input:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--light-purple-color);
 } 
 
 .form__checkbox-label {
@@ -130,14 +130,14 @@ fieldset {
   width: 134px;
   height: 52px;
   padding: 10px;
-  color: #000;
+  color: var(--black-color);
 }
 .form__column-row-input:focus {
-  outline: 2px solid #CD06FF;
+  outline: 2px solid var(--light-purple-color);
 }
 
 .form__column-input_number::placeholder {
-  color: #000;
+  color: var(--black-color);
 }
 
 .form__column-input_number {
@@ -163,15 +163,15 @@ fieldset {
   border: 2px solid transparent;
 }
 .form__column-input:focus {
-  border-color: #CD06FF;
+  border-color: var(--light-purple-color);
 }
 /* ----------------------------------------------------------------------- */
 
 
 .form__btn {
   display: block;
-  color: #6C0287;
-  background-color: #fff;
+  color: var(--dark-purple-color);
+  background-color: var(--white-color);
   padding: 16px 50px;
   margin-left: auto;
   border: 3px solid transparent;
@@ -180,16 +180,16 @@ fieldset {
 }
 
 .form__btn:hover {
-  background-color: #EADEED;
+  background-color: var(--light-white-color);
   border-color: #6C0287;
 }
 
 .form__btn:focus {
-  background-color: #fff;
-  border-color: #6C0287;
+  background-color: var(--white-color);
+  border-color: var(--dark-purple-color);
 }
 
 .form__btn:active {
-  background-color: #EADEED;
+  background-color: var(--light-white-color);
   border-color: transparent;
 }

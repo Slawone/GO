@@ -1,3 +1,5 @@
+@import 'section-title.css';
+
 .reviews__list {
   display: flex;
   flex-direction: column;
@@ -60,6 +62,8 @@
 .reviews__text {
   font-size: 12px;
   line-height: 16px;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {

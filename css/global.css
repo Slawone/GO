@@ -65,7 +65,7 @@ iframe {
 }
 
 section {
-  padding: 50px 0;
+  padding: 15px 0;
 }
 
 .container {
@@ -88,7 +88,23 @@ section {
     padding-top: 30px;
   }
 
+  section {
+    padding: 30px 0;
+  }
+
   .container {
     padding: 0 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 35px 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  section {
+    padding: 50px 0;
   }
 }

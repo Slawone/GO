@@ -1,10 +1,15 @@
 .header {
   padding: 8px 0 3px;
 }
+
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__burger {
+  display: none;
 }
 
 .header__list {
@@ -34,24 +39,69 @@
   color: var(--white-color);
 }
 
-.header__btn {
+.header__order {
   padding: 12px 32px;
   outline: 3px solid var(--light-purple-color);
   transition: all .2s ease-in;
 }
 
-.header__btn:hover {
+.header__order:hover {
   background-color: var(--dark-purple-color);
   outline-color: var(--dark-purple-color);
 }
 
-.header__btn:focus {
+.header__order:focus {
   background-color: var(--dark-purple-color);
   outline-color: var(--dark-purple-color);
 }
 
-.header__btn:active {
+.header__order:active {
   background-color: var(--dark-purple-color);
   outline-width: 1px;
   outline-color: var(--black-color);
+}
+
+@media (max-width: 1240px) {
+  .header__logo {
+    width: 87px;
+    height: 55px;
+  }
+
+  .header__list {
+    gap: 20px;
+  }
+
+  .header__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .header__order {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 26px;
+  }
+}
+
+@media (max-width: 860px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__order {
+    display: none;
+  }
+
+  .header__logo {
+    width: 66px;
+    height: 42 px;
+  }
 }

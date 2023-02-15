@@ -1,35 +1,32 @@
-.reviews__title {
-  margin-bottom: 40px;
-}
-
 .reviews__list {
-  max-width: 980px;
-  margin: 0 auto;
-}
-
-.reviews__item:not(:last-child) {
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .reviews__item {
   display: flex;
-  gap: 20px;  
+  flex-direction: column;
+  gap: 16px;  
 }
 
 .reviews__avatar {
-  width: 280px;  
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 11px;
+  gap: 9px;
 }
 
 .reviews__avatar-img {
   display: block;
-  width: 280px;
-  height: 280px;
+  width: 86px;
+  height: 86px;
   border-radius: 50%; 
   position: relative; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .reviews__avatar-img_first {
@@ -55,9 +52,102 @@
   background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
 }
 
+.reviews__avatar-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .reviews__text {
-  max-width: 680px;
-  font-size: 20px;
-  line-height: 28px;
-  padding-top: 50px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (min-width: 768px) {
+  .reviews__list {
+    gap: 20px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;  
+  }
+
+  .reviews__avatar {
+    gap: 17px;
+  }
+  
+  .reviews__avatar-img {
+    width: 153px;
+    height: 153px;
+  }
+  
+  .reviews__text {
+    max-width: 393px;
+    padding-top: 35px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .reviews__list {
+    gap: 40px;
+  }
+
+  .reviews__item {
+    gap: 38px;  
+  }
+
+  .reviews__avatar {
+    gap: 21px;
+  }
+  
+  .reviews__avatar-img {
+    width: 172px;
+    height: 172px;
+  }
+
+  .reviews__avatar-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  .reviews__text {
+    max-width: 515px;
+    padding-top: 40px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .reviews__list {
+    gap: 50px;
+  }
+
+  .reviews__item {
+    gap: 20px;  
+  }
+
+  .reviews__avatar {
+    gap: 11px;
+  }
+  
+  .reviews__avatar-img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .reviews__avatar-text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .reviews__text {
+    max-width: 680px;
+    padding-top: 60px;
+    font-size: 20px;
+    line-height: 28px;
+  }
 }

@@ -6,8 +6,6 @@
 
 .services__title {
   width: 280px;
-  margin: 0 auto;
-  margin-bottom: 15px;
 }
 
 .services__img {
@@ -68,7 +66,6 @@
 @media (min-width: 768px) {
   .services__title {
     width: 420px;
-    margin-bottom: 30px;
   }
 
   .services__list {
@@ -87,7 +84,6 @@
 @media (min-width: 1024px) {
   .services__title {
     width: 530px;
-    margin-bottom: 40px;
   }
 
   .services__list {

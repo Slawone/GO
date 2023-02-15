@@ -1,22 +1,17 @@
 .halls__title {
-  margin-bottom: 60px;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
 }
 
 .halls__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  gap: 10px;
 }
 
-.halls__item {
-  flex-basis: 580px;
-  min-height: 349px;  
-  transition: transform .2s ease-out;
-}
-
-.halls__item:hover {
-  transform: scale(1.1);
-}
+.halls__link-img {
+  width: 100%;
+} 
 
 .halls__link {
   display: block;
@@ -25,27 +20,91 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
 }
 
 .halls__description {
-  max-width: 250px;
-  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80px;
+  font-size: 26px;
+  line-height: 34px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.halls__link_vibe {
-  background-image: url('../img/vibes.jpg');
+@media (min-width: 768px) {
+  .halls__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+  
+  .halls__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "vibes starwars"
+    "wildwest neonstyle";
+  }
+
+  .halls__link_vibe {
+    grid-area: vibes;
+  }
+  
+  .halls__link_wars {
+    grid-area: starwars;
+  }
+  
+  .halls__link_west {
+    grid-area: wildwest;
+  }
+  
+  .halls__link_neon {
+    grid-area: neonstyle;
+  }
+  
+  .halls__description {
+    max-width: 130px;
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
-.halls__link_wars {
-  background-image: url('../img/star-wars.jpg');
+@media (min-width: 1024px) {
+  .halls__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .halls__item {
+    transition: transform .2s ease-in-out;
+  }
+
+  .halls__item:hover {
+    transform: scale(1.1);
+  }
+  
+  .halls__description {
+    max-width: 252px;
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
-.halls__link_west {
-  background-image: url('../img/wild-west.jpg');
-}
-
-.halls__link_neon {
-  background-image: url('../img/neon-style.jpg');
+@media (min-width: 1440px) {
+  .halls__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .halls__description {
+    font-size: 70px;
+    line-height: 80px;
+  }
 }

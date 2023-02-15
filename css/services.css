@@ -1,61 +1,129 @@
+@import 'section-title.css';
+
 .services {
   padding-bottom: 119px;
 }
 
 .services__title {
-  max-width: 700px;
+  width: 280px;
   margin: 0 auto;
-  line-height: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+}
+
+.services__img {
+  width: 100%;
 }
 
 .services__list {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, minmax(75px, max-content));
+  gap: 10px;
+  justify-content: center;
+  grid-template-areas: 
+    "vr audio"
+    "karaoke games"
+    "netflix ps5";
 }
 
 .services__item {
-  flex-basis: 380px;
-  min-height: 228px;
-  padding: 166px 0 0 40px;
-  transition: transform .2s ease;
-}
-
-.services__item:hover {
-  transform: scale(1.1);
-}
-
-.services__item_vr {
-  background-image: url(../img/services/vr.jpg);
-}
-
-.services__item_audio {
-  background-image: url(../img/services/audio.jpg);
-  transform: translateY(69px);
-}
-
-.services__item_karaoke {
-  background-image: url(../img/services/karaoke.jpg);
-}
-
-.services__item_games {
-  background-image: url(../img/services/games.jpg);
-}
-
-.services__item_netflix {
-  background-image: url(../img/services/netflix.jpg);
-  transform: translateY(69px);
-}
-
-.services__item_ps5 {
-  background-image: url(../img/services/ps5.jpg);
+  position: relative;
 }
 
 .services__description {
-  max-width: 300px;
-  font-size: 20px;
-  line-height: 28px;
+  width: 114px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 10px;
+  line-height: 14px;
   font-weight: 700;
+}
+
+.services__item_vr {
+  grid-area: vr;
+}
+
+.services__item_audio {
+  grid-area: audio;
+}
+
+.services__item_karaoke {
+  grid-area: karaoke;
+}
+
+.services__item_games {
+  grid-area: games;
+}
+
+.services__item_netflix {
+  grid-area: netflix;
+}
+
+.services__item_ps5 {
+  grid-area: ps5;
+}
+
+@media (min-width: 768px) {
+  .services__title {
+    width: 420px;
+    margin-bottom: 30px;
+  }
+
+  .services__list {
+    gap: 20px;
+  }
+
+  .services__description {
+    width: 274px;
+    top: 66%;
+    left: 30px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__title {
+    width: 530px;
+    margin-bottom: 40px;
+  }
+
+  .services__list {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 22px;
+    row-gap: 30px;
+    grid-template-areas: 
+      "vr audio karaoke"
+      "games netflix ps5";
+  }
+
+  .services__item {
+    transition: transform .2s ease;
+  }
+  
+  .services__item:hover {
+    transform: scale(1.1);
+  }
+
+  .services__item_audio {
+    transform: translateY(50px);
+  }
+
+  .services__item_netflix {
+    transform: translateY(50px);
+  }
+
+  .services__description {
+    width: 274px;
+    top: 73%;
+    left: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .services__title {
+    width: 700px;
+  }
 }

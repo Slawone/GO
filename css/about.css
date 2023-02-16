@@ -87,7 +87,7 @@
 @media (min-width: 768px) {
   .about__wrapper {
     grid-template-columns: 1fr 278px;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr, min-content;
     gap: 30px;
     grid-template-areas: 
     "img content-text"

@@ -78,12 +78,17 @@
 }
 
 @media (min-width: 1024px) {
+  .services {
+    padding-bottom: 85px;
+  }
+
   .services__title {
     width: 530px;
   }
 
   .services__list {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, max-content);
     column-gap: 22px;
     row-gap: 30px;
     grid-template-areas: 
@@ -115,6 +120,9 @@
 }
 
 @media (min-width: 1440px) {
+  .services {
+    padding-bottom: 100px;
+  }
   .services__title {
     width: 700px;
   }

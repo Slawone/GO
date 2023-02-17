@@ -33,7 +33,7 @@
     </div>   
   </header>
   <main>
-    <!-- <section class="hero">
+    <section class="hero">
       <div class="container">
         <div class="hero__wrapper">
           <h1 class="hero__title">Game over</h1>
@@ -57,10 +57,10 @@
           </a>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- /.hero -->
 
-    <!-- <section class="services" id="services">
+    <section class="services" id="services">
       <div class="container">
         <h2 class="section-title services__title">У нас есть все для классного отдыха с друзьями!</h2>
         <ul class="services__list">
@@ -90,10 +90,10 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <!-- /.services -->
     
-    <!-- <section id="halls" class="halls">
+    <section id="halls" class="halls">
       <div class="container">
         <h2 class="section-title halls__title">Наши залы</h2>
         <ul class="halls__list">
@@ -123,7 +123,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <!-- /.halls -->
 
     <section id="booking" class="booking">
@@ -216,15 +216,14 @@
                 </label>
               </div>
             </fieldset>
-          </div>
-    
+          </div>    
         </fieldset>
         <!-- /.form__checkbox-field -->
-        <!-- <fieldset class="form__date-field">
+        <fieldset class="form__date-field">
           <legend class="form__title">Выбери дату и время</legend>
 
           <div class="form__columns">
-            <ul class="form__column-list">
+            <ul class="form__column-list form__column-list_date">
               <li class="form__column-item">
                 <div class="form__column-row-item">
                   <label class="form__column-row-label form__column-row-label_date">
@@ -241,34 +240,41 @@
                 </label>
               </li>            
             </ul>
-            <ul class="form__column-list form__column-list_gap">
-              <li class="form__column-item">
-                <label class="form__column-label" for="firstname">
-                  Имя
-                  <input class="form__column-input" type="text" id="firstname" name="firstname" required>
-                </label>              
-              </li>
-              <li class="form__column-item">
-                <label class="form__column-label" for="lastname">
-                  Фамилия
-                  <input class="form__column-input" type="text" id="lastname" name="lastname" required>
-                </label>
-                
-              </li>
-            </ul>
-            <ul class="form__column-list form__column-list_gap">
-              <li class="form__column-item">
-                <label class="form__column-label" for="phone">Телефон</label>
-                <input class="form__column-input" type="tel" id="phone" name="phone" required>
-              </li>
-              <li class="form__column-item">
-                <label class="form__column-label" for="email">E-mail</label>
-                <input class="form__column-input" type="email" id="email" name="email">
-              </li>
-            </ul>
+            <div class="form__column-list-box">
+              <ul class="form__column-list form__column-list_gap form__column-list_width">
+                <li class="form__column-item">
+                  <label class="form__column-label" for="firstname">
+                    <span class="form__column-label-text">Имя</span>
+                    <input class="form__column-input" type="text" id="firstname" name="firstname" required>
+                  </label>
+                </li>
+                <li class="form__column-item">
+                  <label class="form__column-label" for="lastname">
+                    <span class="form__column-label-text">Фамилия</span>
+                    <input class="form__column-input" type="text" id="lastname" name="lastname" required>
+                  </label>
+                </li>
+              </ul>
+              <ul class="form__column-list form__column-list_gap">
+                <li class="form__column-item">
+                  <label class="form__column-label" for="phone">
+                    <span class="form__column-label-text">Телефон</span>
+                  </label>
+                  <input class="form__column-input" type="tel" id="phone" name="phone" required>
+                </li>
+                <li class="form__column-item">
+                  <label class="form__column-label" for="email">
+                    <span class="form__column-label-text">E-mail</span>
+                  </label>
+                  <input class="form__column-input" type="email" id="email" name="email">
+                </li>
+              </ul>
+            </div>
           </div>
-        </fieldset> -->
-        <button class="btn form__btn">Забронировать</button>
+        </fieldset>
+        <div class="btn__box">
+          <button class="btn form__btn">Забронировать</button>
+        </div>
       </form>
       </div> 
     </section> 

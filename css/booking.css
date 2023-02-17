@@ -2,20 +2,12 @@
   background-color: #440F51;
 }
 
-.booking__title {
-  margin-bottom: 50px;
-}
-
 .form__title {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 40px;
-}
-
-.form__title_margin {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 fieldset {
@@ -23,7 +15,189 @@ fieldset {
   padding: 0;
 }
 
-.form__radio-field {
+.form__radio-box {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 14px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form__radio-label { 
+  display: block;
+  padding: 6px 20px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  border: 3px solid transparent; 
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-input:checked + .form__radio-label {
+  background: #2a0335;
+  color: var(--white-color);
+}
+/* .form__radio-box */
+
+.form__check-box .form__title {
+  text-align: left;
+}
+
+.form__check-box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form__check-box-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  line-height: 18px;
+}
+/* .form__check-box */
+
+.form__btn {
+  display: block;
+  color: var(--dark-purple-color);
+  background-color: var(--white-color);
+  font-size: 18px;
+  line-height: 26px;
+  padding: 17px 60px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid transparent;
+  outline: none;
+}
+
+@media (min-width: 480px) {
+  .form__radio-label {
+    padding: 9px 30px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 6px;
+  }
+
+  .form__check-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 49px;
+    row-gap: 35px;
+  }
+
+  .form__check-box-item {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form__title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+
+  .form__radio-box {
+    grid-template-columns: repeat(4, max-content);
+    grid-template-rows: 1fr;
+    gap: 29px;
+    justify-content: space-between;
+  }
+
+  .form__check-box {
+    justify-content: center;
+  }
+
+  .form__btn {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 16px 50px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form__radio-label {
+    padding: 15px 40px;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+  }
+
+  .form__radio-label:hover {
+    background-color: var(--light-white-color);
+    border-color: #640AA3; 
+  }
+  
+  .form__radio-label:focus {
+    color: #000;
+    background-color: var(--white-color);
+    border: 3px solid #640AA3; 
+  }
+  
+  .form__radio-label:active {
+    color: #fff;
+    background-color: var(--dark-purple-color);
+    border-color: var(--white-color); 
+  }
+
+  .form__check-box {
+    gap: 100px;
+  }
+
+  .form__checkbox-input:focus {
+    outline: 1px solid var(--light-purple-color);
+  }
+
+  .form__btn {    
+    transition: all .2s ease ;
+  }
+  
+  .form__btn:hover {
+    background-color: var(--light-white-color);
+    border-color: #6C0287;
+  }
+  
+  .form__btn:focus {
+    background-color: var(--white-color);
+    border-color: var(--dark-purple-color);
+  }
+  
+  .form__btn:active {
+    background-color: var(--light-white-color);
+    border-color: transparent;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form__title {
+    margin-bottom: 40px;
+  }
+
+  .form__radio-label {
+    padding: 10px 40px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+
+/* .form__radio-field {
   margin-bottom: 60px;
 }
 
@@ -70,9 +244,10 @@ fieldset {
 .form__radio-input:checked + .form__radio-label {
   background: #2a0335;
   color: var(--white-color);
-}
+} */
 
-.form__check-box {
+/* ----------------------------------------------------------------------------
+ .form__check-box {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 60px;
@@ -107,9 +282,9 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
+} */
 /* ----------------------------------------------------------------------- */
-.form__column-list {
+/* .form__column-list {
   flex-basis: 300px;
   gap: 36px;
 }
@@ -164,11 +339,11 @@ fieldset {
 }
 .form__column-input:focus {
   border-color: var(--light-purple-color);
-}
+} */
 /* ----------------------------------------------------------------------- */
 
 
-.form__btn {
+/* .form__btn {
   display: block;
   color: var(--dark-purple-color);
   background-color: var(--white-color);
@@ -192,4 +367,4 @@ fieldset {
 .form__btn:active {
   background-color: var(--light-white-color);
   border-color: transparent;
-}
+} */

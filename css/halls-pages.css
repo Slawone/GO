@@ -2,6 +2,7 @@
 
 .page__back {
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .page__back-link {
@@ -18,22 +19,40 @@
 
 .banner {
   min-height: 168px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 0;
 }
 
-.banner__img {
-  width: 100%;
+.banner__vibes {  
+  background-image: url('../img/halls/slot-machines.jpg');
+}
+.banner_starwars {  
+  background-image: url('../img/halls/dartvider.jpg');
+}
+
+.banner_wildwest {
+  background-image: url('../img/halls/hotel.jpg');
+}
+
+.banner_neonstyle {
+  background-image: url('../img/halls/neon-machines.jpg');
 }
 
 .banner__info {
-  font-size: 29px;
+  font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  position: absolute;
+  position: relative;
+  z-index: 10;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .page__text {
@@ -90,11 +109,12 @@
 @media (min-width: 768px) {
   .page__back {
     margin-top: 40px;
+    margin-bottom: 30px;
   }
   
   .page__back-link {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 20px;
     gap: 10px;
   }
   
@@ -112,6 +132,8 @@
   }
 
   .page__text {
+    max-width: 688px;
+    margin: 0 auto;
     padding: 30px 0;
   }
   
@@ -164,6 +186,7 @@
   }
 
   .page__text {
+    max-width: 800px;
     font-size: 20px;
     line-height: 30px;
     padding: 35px 0;
@@ -214,6 +237,7 @@
   }
 
   .page__text {
+    max-width: 1000px;
     font-size: 24px;
     line-height: 36px;
     padding: 50px 0;

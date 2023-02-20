@@ -59,6 +59,16 @@
   
   .faq__list-img:hover {
     transform: scale(1.2);
+  }  
+
+  .faq__list-item:nth-child(even) {
+    color: var(--white-color);
+    background-color: #440F51;
+  }  
+
+  .faq__list-img_white path,
+  .faq__list-img_white circle {
+    stroke: #fff;
   }
 }
 
@@ -71,15 +81,5 @@
     padding: 30px 70px;
     font-size: 24px;
     line-height: 28px;
-  }
-
-  .faq__list-item:nth-child(even) {
-    color: var(--white-color);
-    background-color: #440F51;
-  }  
-
-  .faq__list-img_white path,
-  .faq__list-img_white circle {
-    stroke: #fff;
   }
 }

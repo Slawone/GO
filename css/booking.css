@@ -178,7 +178,7 @@ fieldset {
     justify-content: center;
   }  
 
-  .btn__box {
+  .btn-box {
     max-width: 688px;
     margin: 0 auto;
   }
@@ -251,7 +251,7 @@ fieldset {
     outline: 1px solid var(--light-purple-color);
   }
 
-  .btn__box {
+  .btn-box {
     max-width: 964px;
   }
 

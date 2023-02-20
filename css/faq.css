@@ -18,16 +18,16 @@
   background-color: var(--white-color);
 }
 
-.faq__list-item:nth-child(even) {
-  color: var(--white-color);
-  background-color: #440F51;
-}
-
 .faq__list-img {
   cursor: pointer;
   width: 30px;
-  height: 30px;                        
+  height: 30px;            
 }
+
+/* .faq__list-img circle {
+  fill: #fff;      
+  stroke: #fff;              
+} */
 
 @media (min-width: 768px) {
   .faq__list {
@@ -52,6 +52,14 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  .faq__list-img {
+    transition: transform .2s ease-in-out;
+  }
+  
+  .faq__list-img:hover {
+    transform: scale(1.2);
+  }
 }
 
 @media (min-width: 1440px) {
@@ -63,5 +71,15 @@
     padding: 30px 70px;
     font-size: 24px;
     line-height: 28px;
+  }
+
+  .faq__list-item:nth-child(even) {
+    color: var(--white-color);
+    background-color: #440F51;
+  }  
+
+  .faq__list-img_white path,
+  .faq__list-img_white circle {
+    stroke: #fff;
   }
 }

@@ -75,8 +75,6 @@
   line-height: 11px;
   padding: 8px 13px;
   background-color: var(--dark-purple-color);
-  filter: drop-shadow(1 1px 4px var(--dark-purple-color));
-  outline: none;
 }
 
 @media (min-width: 480px) {
